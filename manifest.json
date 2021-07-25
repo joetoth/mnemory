@@ -1,0 +1,40 @@
+{
+  "name": "Mnemory",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "29",
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "identity",
+    "https://www.googleapis.com/*",
+    "notifications",
+    "storage"
+  ],
+  "oauth2": {
+    "client_id": "724252874593-5rf8icr8ctkcouecvkc30cr9h6vcnphs.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/spreadsheets.readonly"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "html": "input.html",
+      "js": [
+        "input.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://netdna.bootstrapcdn.com https://cdnjs.cloudflare.com https://content.googleapis.com https://ajax.googleapis.com https://www.googleapis.com https://apis.google.com https://accounts.google.com https://oauth.googleusercontent.com https://ssl.gstatic.com https://docs.google.com; object-src 'self'"
+}
