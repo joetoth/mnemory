@@ -1,6 +1,4 @@
-const CLIENT_ID = "724252874593-5rf8icr8ctkcouecvkc30cr9h6vcnphs.apps.googleusercontent.com";
 const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
-var SCOPES = 'https://www.googleapis.com/auth/spreadsheets'
 
 class Flash {
 

@@ -2,6 +2,7 @@
   "name": "Mnemory",
   "version": "0.1",
   "manifest_version": 2,
+  "key": "GET YOUR OWN KEY and client_id for that matter",
   "minimum_chrome_version": "29",
   "background": {
     "page": "background.html",
@@ -36,5 +37,5 @@
       "run_at": "document_end"
     }
   ],
-  "content_security_policy": "script-src 'self' https://netdna.bootstrapcdn.com https://cdnjs.cloudflare.com https://content.googleapis.com https://ajax.googleapis.com https://www.googleapis.com https://apis.google.com https://accounts.google.com https://oauth.googleusercontent.com https://ssl.gstatic.com https://docs.google.com; object-src 'self'"
+  "content_security_policy": "script-src 'self' https://content.googleapis.com https://ajax.googleapis.com https://www.googleapis.com https://apis.google.com https://accounts.google.com https://oauth.googleusercontent.com https://ssl.gstatic.com https://docs.google.com; object-src 'self'"
 }
