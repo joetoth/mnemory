@@ -192,6 +192,7 @@ class Flash {
 
 
   async start() {
+    await this.updateAuthToken()
     await this.init()
     let options = await this.getOptions()
 
@@ -259,5 +260,6 @@ class Flash {
 var f = new Flash()
 
 async function onGAPILoad() {
+  console.log('gapi loaded');
   await f.start()
 }
